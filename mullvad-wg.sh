@@ -76,7 +76,7 @@ for CODE in "${SERVER_CODES[@]}"; do
 		[Peer]
 		PublicKey = ${SERVER_PUBLIC_KEYS["$CODE"]}
 		Endpoint = ${SERVER_ENDPOINTS["$CODE"]}
-		AllowedIPs = 0.0.0.0/1, 128.0.0.0/1, ::/1, 8000::/1
+		AllowedIPs = 10.64.0.1/32
 	_EOF
 	mv "$CONFIGURATION_FILE.tmp" "$CONFIGURATION_FILE"
 done
